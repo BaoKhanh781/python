@@ -1,0 +1,16 @@
+def main():
+    print("This is a division calculator")
+    first = input("please enter your first number")
+    second = input("please enter your second number")
+    try:
+        first = float(first)
+        second = float(second)
+        division = first/second
+    except:
+        if(isinstance(first, str)):
+            print("please enter number for the first number")
+        elif(isinstance(second, str)):
+            print("please enter number for the second number")
+        else:
+            print("operand cannot be zero")
+main()
